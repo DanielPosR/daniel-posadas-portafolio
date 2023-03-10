@@ -103,22 +103,32 @@ li {
     color: var(--gris);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 1rem;
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 19ch;
-    animation: typing 2s steps(19),
-    blink .5s infinite step-end alternate;
-    overflow: hidden;
 }
 
-@keyframes typing {
-    from {width: 0;}
+@media (min-width: 768px) {
+    .header-titulo {
+        display: block;
+        white-space: nowrap;
+        width: 19ch;
+        animation: typing 2s steps(19),
+            blink .5s infinite step-end alternate;
+        overflow: hidden;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
 }
 
-@keyframes blink {
-    50% {border-color: transparent}
-}
+
 
 .navegacion {
     background-color: var(--azul-fuerte);
@@ -526,7 +536,7 @@ textarea {
 }
 
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     background-color: var(--azul-fuerte);
 }
