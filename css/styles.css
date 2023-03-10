@@ -105,13 +105,13 @@ li {
     margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .header-titulo {
         display: block;
         white-space: nowrap;
         width: 19ch;
         animation: typing 2s steps(19),
-            blink .5s infinite step-end alternate;
+        blink .5s infinite step-end alternate;
         overflow: hidden;
     }
 
@@ -421,7 +421,7 @@ span {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .proyecto:nth-child(6) {
         display: none;
     }
