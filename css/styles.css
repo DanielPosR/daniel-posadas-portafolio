@@ -452,10 +452,6 @@ span {
     transition: transform .3s ease-in-out;
 }
 
-.proyecto__img:hover {
-    transform: rotate(-2deg);
-}
-
 .proyecto__info {
     padding: 2rem;
 }
@@ -537,6 +533,22 @@ textarea {
 
 
 .btn:hover {
+    cursor: pointer;
+    background-color: var(--azul-fuerte);
+}
+
+.btn-proyectos {
+    padding: 1rem 4rem;
+    border: none;
+    background-color: #015fb2;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color .3s ease-in-out;
+    border-radius: 1rem;
+}
+
+.btn-proyectos:hover {
     cursor: pointer;
     background-color: var(--azul-fuerte);
 }
