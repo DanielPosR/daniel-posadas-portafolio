@@ -421,12 +421,6 @@ span {
     }
 }
 
-@media (max-width: 1200px) {
-    .proyecto:nth-child(6) {
-        display: none;
-    }
-}
-
 
 .proyecto {
     background-color: var(--claro);
