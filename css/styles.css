@@ -468,14 +468,14 @@ span {
 }
 
 .formulario {
-    width: auto;
-    margin: 0 auto;
+    max-width: 100%;
     background-color: #fff;
 }
 
 @media (min-width: 768px) {
     .formulario {
         max-width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -497,11 +497,11 @@ span {
 
 .campo {
     display: flex;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .campo label {
-    flex-basis: 10rem;
     color: var(--azul-fuerte);
     font-family: var(--fuente-principal);
     font-size: 1.8rem;
@@ -532,7 +532,7 @@ textarea {
 }
 
 .btn-proyectos {
-    padding: 1rem 4rem;
+    padding: 1rem;
     border: none;
     background-color: #015fb2;
     color: #fff;
