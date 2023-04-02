@@ -338,6 +338,7 @@ span {
     max-height: 100%;
     height: 150px;
     margin: 0 auto 1.5rem auto;
+    border-radius: 2rem;
 }
 
 @media (min-width: 768px) {
