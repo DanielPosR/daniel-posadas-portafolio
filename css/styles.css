@@ -401,9 +401,7 @@ padding: 1rem;
         flex-direction: column;
     }
 
-    .proyecto:nth-child(2),
-    .proyecto:nth-child(4),
-    .proyecto:nth-child(6) {
+    .proyecto:nth-child(2n) {
         align-self: flex-end;
     }
 }
