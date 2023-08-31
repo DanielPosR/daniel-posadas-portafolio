@@ -1,0 +1,53 @@
+.proyectos {
+  position: relative;
+  z-index: 0;
+}
+
+.infoProyecto {
+  margin-top: 3rem;
+}
+
+.descripcion {
+  border: 1px solid var(--acentos);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.descripcion h3 {
+  color: var(--primario);
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+.descripcion h3 span {
+  color: var(--acentos);
+}
+.descripcion p {
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.etiquetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.tag {
+  font-weight: 900;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}

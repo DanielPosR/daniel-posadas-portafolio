@@ -1,0 +1,24 @@
+.footer {
+    border-top: 1px solid var(--acentos);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer p {
+    color: var(--blanco);
+    margin: 0;
+}
