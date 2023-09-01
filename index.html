@@ -37,9 +37,9 @@
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   <script>
-    if (window.location.href === 'https://danielposr.github.io/daniel-posadas-portafolio/') {
+    if (window.location.hostname === 'danielposr.github.io') {
       // Redirigir a la URL de Vercel
-      window.location.href = "https://daniel-posadas-portafolio.vercel.app/";
+      return window.location.href = "https://daniel-posadas-portafolio.vercel.app/";
     }
   </script>
 </body>
