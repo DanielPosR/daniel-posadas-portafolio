@@ -80,6 +80,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem 0;
+    background-attachment: fixed;
 }
 
 .otras_habilidades .heading {
