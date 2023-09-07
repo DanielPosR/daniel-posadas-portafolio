@@ -8,7 +8,8 @@ import Habilidades from './Pages/Habilidades'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //* ESTILOS
-import './index.css'
+import './index.css';
+import './normalize.css';
 import Formacion from './Pages/Formacion';
 import Proyectos from './Pages/Proyectos';
 import SobreMi from './Pages/SobreMi';
