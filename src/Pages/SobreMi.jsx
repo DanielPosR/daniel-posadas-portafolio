@@ -65,7 +65,10 @@ function SobreMi() {
 
                 <div className={`contenedor ${styles.sobre}`}>
 
-                    <img src="/img/sobremi.jpg" alt="" />
+                    <picture>
+                        <source srcSet="/img/sobremi.webp" type="image/webp" />
+                        <img loading="lazy" src="/img/sobremi.jpg" alt="Imagem sobre mi"/>
+                    </picture>
 
                     <div>
                         <p>Mi apasionante viaje en el mundo de la programación comenzó en el año 2020.</p>

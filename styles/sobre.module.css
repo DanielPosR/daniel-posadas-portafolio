@@ -1,5 +1,9 @@
 main.main {
-    background-image: url(/img/hero-bg.jpg);
+    background-image: url('/img/hero-bg.webp');
+    background-image: image-set(
+        url('/img/hero-bg.webp') format('webp'),
+        url('/img/hero-bg.jpg') format('jpg')
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

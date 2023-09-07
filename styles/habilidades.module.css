@@ -76,7 +76,11 @@
 
 
 .otras_habilidades {
-    background-image: url(/img/habilidades-bg.jpg);
+    background-image: url('/img/habilidades-bg.webp');
+    background-image: image-set(
+        url('/img/habilidades-bg.webp') format('webp'),
+        url('/img/habilidades-bg.jpg') format('jpg')
+    );
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem 0;

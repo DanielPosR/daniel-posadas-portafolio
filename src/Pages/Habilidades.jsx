@@ -9,52 +9,52 @@ const Habilidades = () => {
     const tecnologias = [
         {
             porcentaje: '90%',
-            imagen: '/img/logos/html.png',
+            imagen: '/img/logos/html',
             nombre: "HTML"
         },
         {
             porcentaje: '90%',
-            imagen: '/img/logos/css.png',
+            imagen: '/img/logos/css',
             nombre: "CSS"
         },
         {
             porcentaje: '70%',
-            imagen: '/img/logos/javascript.png',
+            imagen: '/img/logos/javascript',
             nombre: "JS"
         },
         {
             porcentaje: '70%',
-            imagen: '/img/logos/react.png',
+            imagen: '/img/logos/react',
             nombre: "ReactJS"
         },
         {
             porcentaje: '60%',
-            imagen: '/img/logos/git.png',
+            imagen: '/img/logos/git',
             nombre: "Git"
         },
         {
             porcentaje: '50%',
-            imagen: '/img/logos/github.png',
+            imagen: '/img/logos/github',
             nombre: "Github"
         },
         {
             porcentaje: '50%',
-            imagen: '/img/logos/sass.png',
+            imagen: '/img/logos/sass',
             nombre: "SASS"
         },
         {
             porcentaje: '40%',
-            imagen: '/img/logos/php.png',
+            imagen: '/img/logos/php',
             nombre: "PHP"
         },
         {
             porcentaje: '40%',
-            imagen: '/img/logos/mysql.png',
+            imagen: '/img/logos/mysql',
             nombre: "MySQL"
         },
         {
             porcentaje: '30%',
-            imagen: '/img/logos/gulp.png',
+            imagen: '/img/logos/gulp',
             nombre: "GULP"
         }
     ]
@@ -63,57 +63,57 @@ const Habilidades = () => {
     const habilidades = [
         {
             titulo: "Flexibilidad",
-            imagen: '/img/habilidades/cambio.png',
+            imagen: '/img/habilidades/cambio',
             categoria: 'desarrollo'
         },
         {
             titulo: "Autonomía en el aprendizaje",
-            imagen: '/img/habilidades/aprendizaje.png',
+            imagen: '/img/habilidades/aprendizaje',
             categoria: 'desarrollo'
         },
         {
             titulo: "Capacidad de autogestión",
-            imagen: '/img/habilidades/autogestion.png',
+            imagen: '/img/habilidades/autogestion',
             categoria: 'interpersonal'
         },
         {
             titulo: "Capacidad para dar y recibir retroalimentación",
-            imagen: '/img/habilidades/feedback.png',
+            imagen: '/img/habilidades/feedback',
             categoria: 'interpersonal'
         },
         {
             titulo: "Proactividad",
-            imagen: '/img/habilidades/proactivo.png',
+            imagen: '/img/habilidades/proactivo',
             categoria: 'desarrollo'
         },
         {
             titulo: "Resolución de problemas",
-            imagen: '/img/habilidades/creativo.png',
+            imagen: '/img/habilidades/creativo',
             categoria: 'desarrollo'
         },
         {
             titulo: "Atención al detalle",
-            imagen: '/img/habilidades/detalle.png',
+            imagen: '/img/habilidades/detalle',
             categoria: 'interpersonal'
         },
         {
             titulo: "Orientación a resultados",
-            imagen: '/img/habilidades/enseñar.png',
+            imagen: '/img/habilidades/enseñar',
             categoria: 'interpersonal'
         },
         {
             titulo: "Comunicación efectiva",
-            imagen: '/img/habilidades/comunicacion.png',
+            imagen: '/img/habilidades/comunicacion',
             categoria: 'desarrollo'
         },
         {
             titulo: "Capacidad para trabajar en equipo",
-            imagen: '/img/habilidades/equipo.png',
+            imagen: '/img/habilidades/equipo',
             categoria: 'interpersonal'
         },
         {
             titulo: "Capacidad para trabajar de manera individual",
-            imagen: '/img/habilidades/individual.png',
+            imagen: '/img/habilidades/individual',
             categoria: 'desarrollo'
         }
     ]
@@ -138,10 +138,12 @@ const Habilidades = () => {
 
                                 <div key={nombre} className={styles.skill}>
 
-                                    <img src={imagen} />
-                                    
+                                    <picture>
+                                        <source srcSet={`${imagen}.webp`} type="image/webp" />
+                                        <img src={`${imagen}.jpg`} type="image/jpeg" alt={`Icono ${nombre}`} loading="lazy"/>
+                                    </picture>
+
                                     <div className={styles.progress}>
-                                       
                                         <div
                                             style={anchoBarra}
                                             className={styles.progress_bar}
@@ -175,7 +177,10 @@ const Habilidades = () => {
                                         return (
 
                                             <li key={titulo} className={styles.habilidad}>
-                                                <img src={imagen} alt={`Icono sobre ${titulo}`} />
+                                                <picture>
+                                                    <source srcSet={`${imagen}.webp`} type="image/webp" />
+                                                    <img src={`${imagen}.jpg`} type="image/jpeg" alt={`Icono ${titulo}`} loading="lazy" />
+                                                </picture>
                                                 <p>{titulo}</p>
                                             </li>
 
@@ -198,7 +203,10 @@ const Habilidades = () => {
 
                                         return (
                                             <li key={titulo} className={styles.habilidad}>
-                                                <img src={imagen} alt={`Icono sobre ${titulo}`} />
+                                                <picture>
+                                                    <source srcSet={`${imagen}.webp`} type="image/webp" />
+                                                    <img src={`${imagen}.jpg`} type="image/jpeg" alt={`Icono ${titulo}`} />
+                                                </picture>
                                                 <p>{titulo}</p>
                                             </li>
                                         )
