@@ -54,7 +54,10 @@ export default function MenuHamburguesa() {
                         <img src={!modoOscuro ? '/lightmode.svg' : '/darkmode.svg'} alt="Icono selector tema" onClick={() => {
                             setModoOscuro(!modoOscuro)
                             cambiarTema();
-                        }} />
+                        }} 
+                        width={45}
+                        height={45}
+                        />
                     </li>
                 </ul>
             </nav>

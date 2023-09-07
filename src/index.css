@@ -30,7 +30,7 @@ body {
   color: var(--blanco);
   min-height: 100vh;
 
-  transition: all .5s ease-in;
+  transition: background-color .5s ease-in;
 }
 
 

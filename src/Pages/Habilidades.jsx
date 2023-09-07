@@ -1,4 +1,3 @@
-import { Zoom as Animacion } from "react-awesome-reveal";
 import styles from '/styles/habilidades.module.css';
 import { tituloDinamico } from "../js/funciones";
 
@@ -126,34 +125,33 @@ const Habilidades = () => {
 
                 <div className={`${styles.tecnologias} contenedor`}>
 
-                    <Animacion>
-                        {tecnologias.map((tecnologia) => {
-                            const { porcentaje, nombre, imagen } = tecnologia;
 
-                            const anchoBarra = {
-                                width: `${porcentaje}`
-                            }
+                    {tecnologias.map((tecnologia) => {
+                        const { porcentaje, nombre, imagen } = tecnologia;
 
-                            return (
+                        const anchoBarra = {
+                            width: `${porcentaje}`
+                        }
 
-                                <div key={nombre} className={styles.skill}>
+                        return (
 
-                                    <picture>
-                                        <source srcSet={`${imagen}.webp`} type="image/webp" />
-                                        <img src={`${imagen}.jpg`} type="image/jpeg" alt={`Icono ${nombre}`} loading="lazy"/>
-                                    </picture>
+                            <div key={nombre} className={styles.skill}>
 
-                                    <div className={styles.progress}>
-                                        <div
-                                            style={anchoBarra}
-                                            className={styles.progress_bar}
-                                        >{`${porcentaje}  ${nombre}`}</div>
-                                    </div>
+                                <picture>
+                                    <source srcSet={`${imagen}.webp`} type="image/webp" />
+                                    <img src={`${imagen}.jpg`} type="image/jpeg" alt={`Icono ${nombre}`} loading="lazy" />
+                                </picture>
+
+                                <div className={styles.progress}>
+                                    <div
+                                        style={anchoBarra}
+                                        className={styles.progress_bar}
+                                    >{`${porcentaje}  ${nombre}`}</div>
                                 </div>
+                            </div>
 
-                            )
-                        })}
-                    </Animacion>
+                        )
+                    })}
                 </div>
             </main>
 

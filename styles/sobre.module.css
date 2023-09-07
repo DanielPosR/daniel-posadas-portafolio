@@ -130,6 +130,11 @@ main h2 {
     }
 }
 
+.sobre img {
+    width: 100%;
+    height: auto;
+}
+
 .sobre p {
     text-align: justify;
     font-weight: 900;

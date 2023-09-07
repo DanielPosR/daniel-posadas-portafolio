@@ -67,7 +67,7 @@ function SobreMi() {
 
                     <picture>
                         <source srcSet="/img/sobremi.webp" type="image/webp" />
-                        <img loading="lazy" src="/img/sobremi.jpg" alt="Imagem sobre mi"/>
+                        <img loading="lazy" src="/img/sobremi.jpg" alt="Imagem sobre mi" width={300} height={200}/>
                     </picture>
 
                     <div>

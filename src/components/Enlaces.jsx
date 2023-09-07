@@ -10,16 +10,16 @@ export default function Enlaces() {
 
 
                 <a className={styles.social_link2} href='https://www.linkedin.com/in/daniel-posadas-rangel/' target='_blank' rel="noreferrer">
-                    <img src={linkedin} alt="Icono Linkedin" />
+                    <img src={linkedin} alt="Icono Linkedin" width={45} height={45} />
                 </a>
 
 
                 <a className={styles.social_link1} href='https://github.com/DanielPosR' target='_blank' rel="noreferrer">
-                    <img src={github} alt="Icono Github" />
+                    <img src={github} alt="Icono Github" wwidth={45} height={45} />
                 </a>
 
                 <a className={styles.social_link3} href='mailto:danielposr@outlook.com' target='_blank' rel="noreferrer">
-                    <img src={mail} alt="Icono Whats App" />
+                    <img src={mail} alt="Icono Whats App" width={45} height={45} />
                 </a>
 
             </div>
