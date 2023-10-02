@@ -14,7 +14,7 @@
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="content" />
-  <meta property >
+  <meta property>
   <meta name="description" content="Hola, me llamo Daniel Posadas y este es mi portafolio de proyectos" />
   <meta property="og:type" content="website" />
   <!-- <meta property="og:url" content="http://localhost:5173/" /> -->
@@ -34,7 +34,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD8WXJJQWC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-HD8WXJJQWC');
@@ -45,10 +45,12 @@
 
   <script type="module" src="/src/main.jsx"></script>
   <script>
-    if (window.location.hostname === 'danielposr.github.io' || window.location.hostname === 'daniel-posadas-portafolio.vercel.app') {
+    if (window.location.hostname === 'danielposr.github.io' || window.location.origin ===
+      "https://daniel-posadas-portafolio.vercel.app") {
       // Redirigir a la URL de Vercel
       window.location.href = "http://danielposr.com/";
     }
   </script>
 </body>
+
 </html>
