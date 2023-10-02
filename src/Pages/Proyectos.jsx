@@ -97,7 +97,7 @@ const Proyectos = () => {
     },
     {
       id: uuid(),
-      url: 'https://daniel-posadas-portafolio.vercel.app/',
+      url: 'https://danielposr.com',
       descripcion: 'Este es mi portafolio web, recientemente lo actualicé para ofrecer una experiencia más avanzada. En lugar de utilizar HTML, CSS y JavaScript básico, decidí modernizarlo. Ahora he implementado React.js con Vite, aprovechando librerías externas como Swiper, react-type-animation, UUID4 y React Router, entre otras, para mejorar la interacción y funcionalidad del sitio. Además, he incorporado el uso de useState y useEffect como elementos fundamentales en el desarrollo de este proyecto.',
       nombre: 'Mi portafolio web',
       imagen: "/img/proyectos/portafolio",
