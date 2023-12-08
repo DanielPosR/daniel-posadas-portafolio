@@ -22,6 +22,8 @@ const Slider = ({ proyectos, mostrarVista }) => {
 
                const { imagen, id, nombre } = proyecto;
 
+               console.log(id)
+
                return (
                   <SwiperSlide key={id} className="enlaces">
                      <CardProyecto

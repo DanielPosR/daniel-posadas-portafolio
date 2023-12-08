@@ -11,8 +11,8 @@ const CardProyecto = ({ imagen, id, nombre, mostrarVista }) => {
                     className={styles.card}
                 >
                     <picture>
-                        <source srcSet={`${imagen}.webp`} type="image/webp" />
-                        <img href='#vista-previa' src={`${imagen}.png`}alt={`Imagen proyecto: ${nombre}`} width={'100%'} height={'auto'}/>
+                        <source srcSet={`/img/proyectos/${imagen}.webp`} type="image/webp" />
+                        <img href='#vista-previa' src={`/img/proyectos/${imagen}.png`} alt={`Imagen proyecto: ${nombre}`} width={'100%'} height={'auto'}/>
                     </picture>
                 </a>
 

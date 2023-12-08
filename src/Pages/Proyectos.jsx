@@ -14,96 +14,96 @@ const Proyectos = () => {
   const [etiquetas, setEtiquetas] = useState([]);
   const [textoBtn, setTextoBtn] = useState('Movíl');
 
-  const proyectos = [
-    {
-      id: uuid(),
-      url: 'https://bienes-raices-venta.netlify.app/',
-      descripcion: 'Creé una plataforma inmobiliaria desde cero como parte del curso de desarrollo web completo. Esta simulación de sitio web de bienes raíces representa mi habilidad para desarrollar experiencias digitales atractivas y funcionales',
-      nombre: 'Bienes Raices',
-      imagen: "/img/proyectos/bienes-raices",
-      etiquetas: ['Html', 'Css', 'Js']
-    },
-    {
-      id: uuid(),
-      url: 'https://aluraflix-tan.vercel.app/',
-      descripcion: 'Mi proyecto final, desarrollado durante mi formación en Frontend con Oracle y Alura, es un logro personal. Construido desde cero, aplicando mis conocimientos en React JS, incluyendo el uso de useState, useEffect y props. Además, agregué la funcionalidad de localstorage para el seguimiento de videos. Un testimonio de mi compromiso con el aprendizaje y la creación',
-      nombre: 'Alura Flix Videos',
-      imagen: "/img/proyectos/aluraflix",
-      etiquetas: ['Html', 'Css', 'Js', 'React JS']
-    },
-    {
-      id: uuid(),
-      url: 'https://cafe-blogweb.netlify.app/',
-      descripcion: 'Desarrollé un blog de café completo con diversas páginas internas. Este proyecto me brindó una valiosa experiencia en la creación y gestión de contenido web, mejorando mis habilidades en HTML y CSS.',
-      nombre: 'Blog Sobre Café',
-      imagen: "/img/proyectos/blog-cafe",
-      etiquetas: ['Html', 'Css']
-    },
-    {
-      id: uuid(),
-      url: 'https://encriptador-alura-texto.netlify.app/',
-      descripcion: 'Dentro del programa ONE de Oracle y Alura Latam, desarrollé un encriptador que se convirtió en una valiosa herramienta para fortalecer mis habilidades de programación, especialmente en JavaScript. Aunque su función principal es encriptar textos de manera sencilla, este proyecto me brindó la oportunidad de perfeccionar mi lógica de programación y aplicar mis conocimientos de manera efectiva.',
-      nombre: 'Encriptador de Texto',
-      imagen: "/img/proyectos/encriptador",
-      etiquetas: ['Html', 'Css', 'Js']
-    },
-    {
-      id: uuid(),
-      url: 'https://rocke-and-edm-festival.netlify.app/',
-      descripcion: 'Este proyecto representó un desafío, que implicó la integración de un video en el encabezado y la utilización de JavaScript para crear una experiencia de navegación fluida. La implementación exitosa de estas características no solo mejoró la estética de la página, sino que también enriqueció la interacción del usuario al dirigirlo de manera suave a través de las diversas secciones del sitio.',
-      nombre: 'Festival Rock & EDM',
-      imagen: "/img/proyectos/festival-rock",
-      etiquetas: ['Html', 'Css', 'Js', 'Gulp', 'Sass']
-    },
-    {
-      id: uuid(),
-      url: 'https://org-beta-gold.vercel.app/',
-      descripcion: 'Desarrollé un proyecto con React que facilita la organización de equipos de trabajo. Esta aplicación permite crear, editar y eliminar registros de manera intuitiva, y todos los datos se almacenan en el almacenamiento local para un acceso rápido y eficiente.',
-      nombre: 'Organizador de Equipos',
-      imagen: "/img/proyectos/organizador",
-      etiquetas: ['Html', 'Css', 'Js', 'React JS']
-    },
-    {
-      id: uuid(),
-      url: 'https://remarkable-lollipop-1fee64.netlify.app/',
-      descripcion: 'Desarrollé un controlador de gastos en React que facilita el seguimiento del presupuesto. Con esta aplicación, puedes calcular el saldo restante a partir de una cantidad inicial, además de filtrar, editar y eliminar los gastos de manera sencilla. ¡Mantén un control sobre tus finanzas!',
-      nombre: 'Control de Gastos',
-      imagen: "/img/proyectos/presupuesto",
-      etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Tailwind']
-    },
-    {
-      id: uuid(),
-      url: 'https://proyecto-techpro.netlify.app/',
-      descripcion: 'Atractiva landing page dedicada a unos audífonos. Esta página ofrece diversas secciones para explorar a fondo las características y ventajas de este producto. Desde calidad de sonido hasta comodidad de uso, el sitio proporciona toda la información esencial que el usuario necesita conocer.',
-      nombre: 'Audifonos TechPRO',
-      imagen: "/img/proyectos/techpro",
-      etiquetas: ['Html', 'Css']
-    },
-    {
-      id: uuid(),
-      url: 'https://registro-vet.netlify.app/',
-      descripcion: 'Esta es una página web que simplifica la gestión de citas de pacientes en una clínica veterinaria. Con esta plataforma, los usuarios pueden fácilmente registrar, editar y eliminar citas, agilizando así el proceso de programación y mejorando la eficiencia en la atención a las mascotas.',
-      nombre: 'Registro de Pacientes',
-      imagen: "/img/proyectos/veterinaria",
-      etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Tailwind']
-    },
-    {
-      id: uuid(),
-      url: 'https://danielposr.github.io/AluraShop/index.html',
-      descripcion: 'Este proyecto es un ecommerce ficticio centrado en la gestión de productos geek. Ofrece un sistema de administración que permite explorar una variedad de productos desde un archivo JSON estático. Los usuarios pueden crear cuentas, iniciar sesión y disfrutar de formularios con validación, además de agregar nuevos productos al catálogo.',
-      nombre: 'Tienda AluraGeek',
-      imagen: "/img/proyectos/presupuesto",
-      etiquetas: ['Html', 'Css', 'Js', 'JSON', 'FetchAPI']
-    },
-    {
-      id: uuid(),
-      url: 'https://danielposr.com',
-      descripcion: 'Este es mi portafolio web, recientemente lo actualicé para ofrecer una experiencia más avanzada. En lugar de utilizar HTML, CSS y JavaScript básico, decidí modernizarlo. Ahora he implementado React.js con Vite, aprovechando librerías externas como Swiper, react-type-animation, UUID4 y React Router, entre otras, para mejorar la interacción y funcionalidad del sitio. Además, he incorporado el uso de useState y useEffect como elementos fundamentales en el desarrollo de este proyecto.',
-      nombre: 'Mi portafolio web',
-      imagen: "/img/proyectos/portafolio",
-      etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Vite', 'SwiperJS']
-    }
-  ]
+ const proyectos = [
+  {
+    id: uuid(),
+    url: 'https://bienes-raices-venta.netlify.app/',
+    descripcion: 'Creé una plataforma inmobiliaria desde cero como parte del curso de desarrollo web completo. Esta simulación de sitio web de bienes raíces representa mi habilidad para desarrollar experiencias digitales atractivas y funcionales',
+    nombre: 'Bienes Raices',
+    imagen: "bienes-raices",
+    etiquetas: ['Html', 'Css', 'Js']
+  },
+  {
+    id: uuid(),
+    url: 'https://aluraflix-tan.vercel.app/',
+    descripcion: 'Mi proyecto final, desarrollado durante mi formación en Frontend con Oracle y Alura, es un logro personal. Construido desde cero, aplicando mis conocimientos en React JS, incluyendo el uso de useState, useEffect y props. Además, agregué la funcionalidad de localstorage para el seguimiento de videos. Un testimonio de mi compromiso con el aprendizaje y la creación',
+    nombre: 'Alura Flix Videos',
+    imagen: "aluraflix",
+    etiquetas: ['Html', 'Css', 'Js', 'React JS']
+  },
+  {
+    id: uuid(),
+    url: 'https://cafe-blogweb.netlify.app/',
+    descripcion: 'Desarrollé un blog de café completo con diversas páginas internas. Este proyecto me brindó una valiosa experiencia en la creación y gestión de contenido web, mejorando mis habilidades en HTML y CSS.',
+    nombre: 'Blog Sobre Café',
+    imagen: "blog-cafe",
+    etiquetas: ['Html', 'Css']
+  },
+  {
+    id: uuid(),
+    url: 'https://encriptador-alura-texto.netlify.app/',
+    descripcion: 'Dentro del programa ONE de Oracle y Alura Latam, desarrollé un encriptador que se convirtió en una valiosa herramienta para fortalecer mis habilidades de programación, especialmente en JavaScript. Aunque su función principal es encriptar textos de manera sencilla, este proyecto me brindó la oportunidad de perfeccionar mi lógica de programación y aplicar mis conocimientos de manera efectiva.',
+    nombre: 'Encriptador de Texto',
+    imagen: "encriptador",
+    etiquetas: ['Html', 'Css', 'Js']
+  },
+  {
+    id: uuid(),
+    url: 'https://rocke-and-edm-festival.netlify.app/',
+    descripcion: 'Este proyecto representó un desafío, que implicó la integración de un video en el encabezado y la utilización de JavaScript para crear una experiencia de navegación fluida. La implementación exitosa de estas características no solo mejoró la estética de la página, sino que también enriqueció la interacción del usuario al dirigirlo de manera suave a través de las diversas secciones del sitio.',
+    nombre: 'Festival Rock & EDM',
+    imagen: "festival-rock",
+    etiquetas: ['Html', 'Css', 'Js', 'Gulp', 'Sass']
+  },
+  {
+    id: uuid(),
+    url: 'https://org-beta-gold.vercel.app/',
+    descripcion: 'Desarrollé un proyecto con React que facilita la organización de equipos de trabajo. Esta aplicación permite crear, editar y eliminar registros de manera intuitiva, y todos los datos se almacenan en el almacenamiento local para un acceso rápido y eficiente.',
+    nombre: 'Organizador de Equipos',
+    imagen: "organizador",
+    etiquetas: ['Html', 'Css', 'Js', 'React JS']
+  },
+  {
+    id: uuid(),
+    url: 'https://remarkable-lollipop-1fee64.netlify.app/',
+    descripcion: 'Desarrollé un controlador de gastos en React que facilita el seguimiento del presupuesto. Con esta aplicación, puedes calcular el saldo restante a partir de una cantidad inicial, además de filtrar, editar y eliminar los gastos de manera sencilla. ¡Mantén un control sobre tus finanzas!',
+    nombre: 'Control de Gastos',
+    imagen: "presupuesto",
+    etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Tailwind']
+  },
+  {
+    id: uuid(),
+    url: 'https://proyecto-techpro.netlify.app/',
+    descripcion: 'Atractiva landing page dedicada a unos audífonos. Esta página ofrece diversas secciones para explorar a fondo las características y ventajas de este producto. Desde calidad de sonido hasta comodidad de uso, el sitio proporciona toda la información esencial que el usuario necesita conocer.',
+    nombre: 'Audifonos TechPRO',
+    imagen: "techpro",
+    etiquetas: ['Html', 'Css']
+  },
+  {
+    id: uuid(),
+    url: 'https://registro-vet.netlify.app/',
+    descripcion: 'Esta es una página web que simplifica la gestión de citas de pacientes en una clínica veterinaria. Con esta plataforma, los usuarios pueden fácilmente registrar, editar y eliminar citas, agilizando así el proceso de programación y mejorando la eficiencia en la atención a las mascotas.',
+    nombre: 'Registro de Pacientes',
+    imagen: "veterinaria",
+    etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Tailwind']
+  },
+  {
+    id: uuid(),
+    url: 'https://danielposr.github.io/AluraShop/index.html',
+    descripcion: 'Este proyecto es un ecommerce ficticio centrado en la gestión de productos geek. Ofrece un sistema de administración que permite explorar una variedad de productos desde un archivo JSON estático. Los usuarios pueden crear cuentas, iniciar sesión y disfrutar de formularios con validación, además de agregar nuevos productos al catálogo.',
+    nombre: 'Tienda AluraGeek',
+    imagen: "alurageek",
+    etiquetas: ['Html', 'Css', 'Js', 'JSON', 'FetchAPI']
+  },
+  {
+    id: uuid(),
+    url: 'https://danielposr.com',
+    descripcion: 'Este es mi portafolio web, recientemente lo actualicé para ofrecer una experiencia más avanzada. En lugar de utilizar HTML, CSS y JavaScript básico, decidí modernizarlo. Ahora he implementado React.js con Vite, aprovechando librerías externas como Swiper, react-type-animation, UUID4 y React Router, entre otras, para mejorar la interacción y funcionalidad del sitio. Además, he incorporado el uso de useState y useEffect como elementos fundamentales en el desarrollo de este proyecto.',
+    nombre: 'Mi portafolio web',
+    imagen: "portafolio",
+    etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Vite', 'SwiperJS']
+  }
+]
 
 
   function scrollNav(e) {
