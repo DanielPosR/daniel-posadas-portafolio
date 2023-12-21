@@ -45,7 +45,7 @@ function SobreMi() {
 
                             <div className={styles.texto}>
 
-                                <p className='parrafo'>Desde la vibrante Ciudad de México y con {new Date().getFullYear() - 1990} años de edad, me adentré en el apasionante mundo de la programación y el desarrollo web en 2020. Con entusiasmo y dedicación, he creado este portafolio para compartir mis conocimientos y logros en este emocionante viaje.</p>
+                                <p className='parrafo'>Me adentré en el apasionante mundo de la programación y el desarrollo web en 2020. Con entusiasmo y dedicación, he creado este portafolio para compartir mis conocimientos y logros en este emocionante viaje.</p>
 
                                 <p className='parrafo'>¡Te invito a explorar mi trabajo y proyectos!</p>
 
@@ -71,9 +71,8 @@ function SobreMi() {
                     </picture>
 
                     <div>
-                        <p>Mi apasionante viaje en el mundo de la programación comenzó en el año 2020.</p>
                         <p>Mi enfoque se centra en la parte visual y perceptible de las páginas web. Las animaciones que cobran vida, las transiciones fluidas, la paleta de colores armoniosa, los tamaños y fuentes que aportan personalidad y carácter.</p>
-                        <p>Siempre estoy inmerso en la exploración y el dominio de nuevas tecnologías, herramientas y lenguajes de programación. Esto para poder ofrecer soluciones más allá de los requerimientos iniciales.</p>
+                        <p>Siempre estoy inmerso en la exploración y el dominio de nuevas tecnologías, herramientas y lenguajes de programación.</p>
                     </div>
 
                 </div>

@@ -138,7 +138,7 @@ main h2 {
 .sobre p {
     text-align: justify;
     font-weight: 900;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
     @media (min-width: 768px) {
         font-size: 2rem;

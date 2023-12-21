@@ -102,6 +102,13 @@ const Proyectos = () => {
     nombre: 'Mi portafolio web',
     imagen: "portafolio",
     etiquetas: ['Html', 'Css', 'Js', 'React JS', 'Vite', 'SwiperJS']
+  },
+  {
+    id: uuid(),
+    url: 'https://gensystar.mx',
+    descripcion: 'Proyecto destacado en mi portafolio web, dedicado a la creación de la presencia en línea de un cliente y la exhibición efectiva de los servicios de su empresa. La página, desarrollada utilizando Next.js y JavaScript, presenta una combinación de tecnologías modernas para ofrecer una experiencia fluida. Además, se integra con FormSpree para garantizar una comunicación directa mediante un formulario de contacto, proporcionando una solución práctica y eficaz para la interacción con los visitantes del sitio. Este proyecto demuestra mi habilidad para implementar soluciones web integrales, desde la arquitectura hasta la experiencia del usuario, con un enfoque en la usabilidad y la tecnología de vanguardia.',
+    imagen: "gensystar",
+    etiquetas: ['Html', 'Css', 'Js', 'React', 'NextJs', 'FormSpree']
   }
 ]
 
