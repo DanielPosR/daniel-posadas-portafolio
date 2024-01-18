@@ -1,16 +1,18 @@
-import Logo from "./Logo";
-import styles from '/styles/footer.module.css';
+import '../../styles/footer.css';
 
 export default function Footer() {
-    return (
-        <footer className={`${styles.footer}`}>
+  return (
+    <footer>
 
-            <div className={`contenedor ${styles.contenido}`}>
-                <Logo />
+      <div className="contenedor">
+        <img src="/img/logo.png" alt="Logotipo" className="logo-footer" />
 
-                <p>Daniel Posadas Rangel. Todos los derechos reservados {new Date().getFullYear()} &copy; </p>
-            </div>
+        <p className="parrafo-footer">
+          Todos los derechos reservados. Daniel Posadas Rangel &copy; {new Date().getFullYear()}
+        </p>
 
-        </footer>
-    )
+      </div>
+
+    </footer>
+  )
 }

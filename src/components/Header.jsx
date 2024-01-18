@@ -1,21 +1,37 @@
-import Logo from './Logo';
-import MenuHamburguesa from './MenuHamburguesa';
-import styles from '/styles/header.module.css';
 
+import '../../styles/header.css'
+import MenuResponsive from './MenuResponsive'
 
-const Header = () => {
+export default function Header() {
+
+    function scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <>
-            <header className={styles.header}>
-                <div className={`contenedor ${styles.barra}`}>
+            <header className='header'>
 
-                    <Logo />
-                    <MenuHamburguesa />
-                    
+                <div className="barra contenedor">
+
+
+                    <a
+                    onClick={scrollTop} 
+                    className="logo"
+                    >
+                        <img src="/img/logo.png" alt="logotipo" />
+                        <p>DanielPosR</p>
+                    </a>
+
+                    <MenuResponsive />
+
+
                 </div>
+
             </header>
         </>
     )
 }
-
-export default Header;

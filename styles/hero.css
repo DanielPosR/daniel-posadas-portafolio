@@ -1,0 +1,25 @@
+.seccion {
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.seccion img {
+    max-width: 100%;
+}
+
+.nombre {
+    color: var(--primario);
+}
+
+.parrafo {
+    font-size: 2.5rem;
+    font-weight: 500;
+}

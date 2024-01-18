@@ -1,0 +1,29 @@
+.tecnologias .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.tecnologia {
+    max-width: 100%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnologia p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.texto,
+.porcentaje {
+    font-weight: 700;
+}
+
+.porcentaje {
+    color: var(--negro);
+}

@@ -1,0 +1,218 @@
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .menuBtn {
+    position: inherit;
+    padding: 0;
+  }
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--primario);
+  margin: 1px;
+  transition: 0.4s;
+}
+
+.bar:nth-child(1).active {
+  transform: rotate(45deg);
+}
+
+.bar:nth-child(2).active {
+  transform: rotate(-45deg);
+}
+
+.bar:nth-child(3).active {
+  display: none;
+}
+
+
+
+@media (min-width: 768px) {
+  .bar {
+    display: none;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 22rem;
+  height: 100%;
+  transition: 0.4s;
+  background-color: #222;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    position: inherit;
+    max-width: 100%;
+    width: 95%;
+    background-color: transparent;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.nav.active {
+  left: 0;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  padding: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .nav li {
+    padding: 0;
+  }
+}
+
+.nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: all .3s ease-in;
+}
+
+@media (min-width: 768px) {
+  .nav a {
+    color: var(--negro);
+  }
+}
+
+.nav a:hover {
+  color: var(--primario);
+}
+
+.nav ul {
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+li .contacto {
+  border:2px solid var(--primario);
+  color: var(--blanco);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: background-color .5s ease-in-out;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    color: var(--negro);
+  }
+}
+
+li .contacto:hover {
+  color: var(--blanco);
+  background-color: var(--primario);
+}
+
+.nav li img {
+  width: 4rem;
+  margin: 0;
+  padding: 0;
+  display: inline;
+
+  @media (min-width: 768px) {
+    width: 6rem;
+  }
+}
+
+
+/* * The switch - the box around the slider    */
+#theme-toggle-button {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}

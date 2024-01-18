@@ -1,10 +1,13 @@
-import { useState } from 'react';
-import styles from '/styles/contacto.module.css';
+import { useState, useEffect } from 'react';
+import '../../styles/contacto.css';
+
+import Swal from 'sweetalert2';
+
 
 import { useForm } from '@formspree/react';
-import { Navigate } from 'react-router-dom';
 
 const ContactForm = () => {
+
     const [state, handleSubmit] = useForm("xrgwqwzw");
 
     const [nombre, setNombre] = useState('');
@@ -12,7 +15,22 @@ const ContactForm = () => {
     const [asunto, setAsunto] = useState('');
     const [mensaje, setMensaje] = useState('');
 
-    const [redirect, setRedirect] = useState(false);
+    useEffect(() => {
+        if (state.succeeded) {
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Mensaje Enviado",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
+        setNombre('');
+        setEmail('');
+        setAsunto('');
+        setMensaje('');
+    }, [state.succeeded]);
 
     function validarForm(e) {
         if (e.target.value === '') {
@@ -37,122 +55,80 @@ const ContactForm = () => {
     }
 
 
-    // function manejarEnvio(e) {
-    //     e.preventDefault()
-
-    //     setTimeout(() => {
-    //         setNombre('');
-    //         setEmail('');
-    //         setAsunto('');
-    //         setMensaje('');
-
-    //         setMensajeEnviado('');
-    //     }, 3000);
-    // }
-
-    function redireccionar (valor) {
-
-        if(state.succeeded) {
-
-            setTimeout(() => {
-                setRedirect(valor)
-            }, 2500);
-
-            return;
-        }
-    }
-
     return (
         <form
-            className={styles.formulario}
+            className='formulario'
             onSubmit={handleSubmit}
         >
 
-            <fieldset>
-                <legend>Enviar mensaje</legend>
+            <label htmlFor="nombre">Nombre:</label>
+            <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder='Tu nombre'
+                required
+                value={nombre}
+                onChange={(e) => {
+                    setNombre(e.target.value)
+                }}
+                onBlur={(e) => validarForm(e)}
+                minLength={3}
+            />
 
-                <label htmlFor="nombre">Nombre:</label>
-                <input
-                    type="text"
-                    name="nombre"
-                    id="nombre"
-                    placeholder='Tu nombre'
-                    required
-                    value={nombre}
-                    onChange={(e) => {
-                        setNombre(e.target.value)
-                    }}
-                    onBlur={(e) => validarForm(e)}
-                    minLength={3}
-                />
+            <label htmlFor="email">Email:</label>
+            <input
+                autoComplete='false'
+                type="text"
+                name="email"
+                id="email"
+                placeholder='Tu email'
+                required
+                value={email}
+                onChange={(e) => {
+                    setEmail(e.target.value)
+                }}
+                onBlur={(e) => {
+                    validarEmail(e)
+                }}
+            />
 
-                <label htmlFor="email">Email:</label>
-                <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder='Tu email'
-                    required
-                    value={email}
-                    onChange={(e) => {
-                        setEmail(e.target.value)
-                    }}
-                    onBlur={(e) => {
-                        validarEmail(e)
-                    }}
-                />
+            <label htmlFor="asunto">Asunto:</label>
+            <input
+                type="text"
+                name="asunto"
+                id="asunto"
+                placeholder='Asunto del mensaje'
+                required
+                value={asunto}
+                onChange={(e) => {
+                    setAsunto(e.target.value)
+                }}
+                onBlur={(e) => validarForm(e)}
+                minLength={5}
+            />
 
-                <label htmlFor="asunto">Asunto:</label>
-                <input
-                    type="text"
-                    name="asunto"
-                    id="asunto"
-                    placeholder='Asunto del mensaje'
-                    required
-                    value={asunto}
-                    onChange={(e) => {
-                        setAsunto(e.target.value)
-                    }}
-                    onBlur={(e) => validarForm(e)}
-                    minLength={5}
-                />
+            <label htmlFor="mensaje">Mensaje:</label>
+            <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder='Tu mensaje'
+                value={mensaje}
+                onChange={(e) => {
+                    setMensaje(e.target.value)
+                }}
+                onBlur={(e) => validarForm(e)}
+                minLength={10}
+                required
+            ></textarea>
 
-                <label htmlFor="mensaje">Mensaje:</label>
-                <textarea
-                    name="mensaje"
-                    id="mensaje"
-                    placeholder='Tu mensaje'
-                    value={mensaje}
-                    onChange={(e) => {
-                        setMensaje(e.target.value)
-                    }}
-                    onBlur={(e) => validarForm(e)}
-                    minLength={10}
-                    required
-                ></textarea>
 
-            </fieldset>
-
-            <div className={styles.botones}>
-
-                <button
-                    type="submit"
-                    disabled={state.submitting}
-                    className='btn'
-                > Enviar </button>
-
-            </div>
-
-            {state.succeeded && (
-                <>
-                    <div className='alertaEnviado'>Enviado. redireccionando...</div>
-                    {redireccionar(true)}
-
-                </>
-
-            )}
-            {redirect ? <Navigate to={'/'} /> : null}
-
+            <button
+                type="submit"
+                disabled={state.submitting}
+                className='btn'
+            > Enviar
+            </button>
         </form>
     )
 }

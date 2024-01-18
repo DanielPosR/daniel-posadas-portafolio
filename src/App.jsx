@@ -1,64 +1,35 @@
-//* COMPONENTES
+import Contacto from './components/Contacto'
 import Footer from './components/Footer'
+import Formacion from './components/Formacion'
+import Habilidades from './components/Habilidades'
 import Header from './components/Header'
-import Habilidades from './Pages/Habilidades'
-
-
-//* DEPENDENCIAS
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-//* ESTILOS
-import './index.css';
-import Formacion from './Pages/Formacion';
-import Proyectos from './Pages/Proyectos';
-import SobreMi from './Pages/SobreMi';
-import Contacto from './Pages/Contacto';
-import Error from './Pages/Error';
+import Hero from './components/Hero'
+import Proyectos from './components/Proyectos'
+import Tecnologias from './components/Tecnologias'
 
 
 function App() {
 
   return (
-
-    <Router>
-
+    <>
       <Header />
 
-      <Routes>
 
-        <Route
-          path='/'
-          element={<SobreMi />}
-        />
+      <Hero />
 
-        <Route
-          path='/formacion'
-          element={<Formacion />}
-        />
+      <Tecnologias />
 
-        <Route
-          path='/habilidades'
-          element={<Habilidades />}
-        />
+      <Habilidades />
 
-        <Route
-          path='/proyectos'
-          element={<Proyectos />}
-        />
+      <Proyectos />
 
-        <Route
-          path='/contacto'
-          element={<Contacto />}
-        />
+      <Formacion />
 
-        <Route path='*' element={<Error/> } />
-
-      </Routes>
+      <Contacto />
 
       <Footer />
-    </Router>
-
+    </>
   )
 }
 
-export default App;
+export default App

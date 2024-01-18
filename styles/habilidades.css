@@ -1,0 +1,45 @@
+.habilidades {
+    background-image: url('/img/habilidades-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    max-width: 100%;
+    padding: 5rem 0;
+}
+
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.habilidad {
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.habilidad img {
+    width: 5rem;
+}
+
+.habilidad p {
+    color: var(--blanco);
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
