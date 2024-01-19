@@ -147,9 +147,10 @@ li .contacto:hover {
 
 /* * The switch - the box around the slider    */
 #theme-toggle-button {
-  font-size: 10px;
+  font-size: 15px;
   position: relative;
   display: inline-block;
+  max-width: 100%;
   width: 5em;
   cursor: pointer;
 }
