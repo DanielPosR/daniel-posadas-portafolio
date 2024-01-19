@@ -12,11 +12,11 @@ export default function Contacto() {
 
             <h2 className="heading">Contacto</h2>
 
-            <div data-aos="fade-left">
+            <div data-aos="zoom-in">
                 <Social />
             </div>
 
-            <div data-aos="fade-right" style={{ width: '100%' }}>
+            <div data-aos="zoom-in" style={{ width: '100%' }}>
                 <Formulario />
             </div>
 

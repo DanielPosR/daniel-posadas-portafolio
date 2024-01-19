@@ -1,16 +1,16 @@
 .header {
-    color: var(--negro);
     padding: .5rem 0;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 2;
     background-color: var(--blanco);
-
+    color: var(--negro);
 
     @media (min-width: 768px) {
+        top: 0;
+        position: sticky;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.8);
-        top: 0;
     }
 }
 
@@ -34,35 +34,4 @@
 
 .logo p {
     margin: 0;
-}
-
-.sobre {
-    background-color: #fff;
-    max-width: 90%;
-    padding: 2rem;
-    height: auto; 
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-    transition: all .5s ease-in-out;
-
-    @media (min-width: 768px) {
-        max-width: 50%;
-        margin-top: -5rem;
-       border-top-right-radius: 10rem;
-        padding: 3.5rem;
-    }
-}
-
-.sobre p {
-    text-align: left;
-    line-height: 1.5;
-    font-size: 1.5rem;
-    font-weight: 500;
-
-
-    @media (min-width: 768px) {
-        margin-left: 5rem;
-        text-align: justify;
-        font-size: 1.8rem;
-    }
 }

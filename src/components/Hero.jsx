@@ -5,7 +5,7 @@ export default function Hero() {
         <>
 
             <main
-                className="seccion contenedor animate__animated animate__pulse"
+                className="seccion contenedor"
             >
 
                 <div>

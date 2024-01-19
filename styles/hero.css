@@ -1,5 +1,5 @@
 .seccion {
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin-top: 4rem;
     text-align: center;
     display: grid;
@@ -15,6 +15,7 @@
     max-width: 100%;
 }
 
+
 .nombre {
     color: var(--primario);
 }
@@ -22,4 +23,34 @@
 .parrafo {
     font-size: 2.5rem;
     font-weight: 500;
+}
+
+.sobre {
+    background-color: #fff;
+    max-width: 100%;
+    padding: 2rem;
+    height: auto;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    transition: all .5s ease-in-out;
+
+    @media (min-width: 768px) {
+        max-width: 50%;
+        margin-top: -4rem;
+        border-top-right-radius: 10rem;
+        padding: 3.5rem;
+    }
+}
+
+.sobre p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+
+    @media (min-width: 768px) {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
 }

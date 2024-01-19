@@ -35,7 +35,6 @@ export default function Proyectos() {
         }
     },[])
 
-    console.log(proyectos)
 
     // const proyectos = [
     //     {

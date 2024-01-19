@@ -16,72 +16,72 @@ export default function formacion() {
 
             <Timeline>
                 <TimelineItem>
-                    <TimelineOppositeContent fontSize={18} color="text.primary">
+                    <TimelineOppositeContent fontSize={5} color="text.primary">
                         <p style={{ margin: '0' }}> UCAD - En curso</p>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot color='success' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent fontSize={18}><p style={{ margin: '0' }}> Ingeniería en Sistemas</p></TimelineContent>
+                    <TimelineContent fontSize={5}><p style={{ margin: '0' }}> Ingeniería en Sistemas</p></TimelineContent>
                 </TimelineItem>
 
 
                 <TimelineItem>
-                    <TimelineOppositeContent fontSize={18} color="text.secondary">
+                    <TimelineOppositeContent fontSize={5} color="text.secondary">
                         <p style={{ margin: '0' }}> UDEMY - 2022</p>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot color='secondary' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent fontSize={18}><p style={{ margin: '0' }}> Java Script - La guía completa</p></TimelineContent>
+                    <TimelineContent fontSize={5}><p style={{ margin: '0' }}> Java Script - La guía completa</p></TimelineContent>
                 </TimelineItem>
 
 
                 <TimelineItem>
-                    <TimelineOppositeContent fontSize={18} color="text.secondary">
+                    <TimelineOppositeContent fontSize={5} color="text.secondary">
                         <p style={{ margin: '0' }}>UDEMY - 2022 </p>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot color='warning' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent fontSize={18}><p style={{ margin: '0' }}>CSS - La guía completa </p></TimelineContent>
+                    <TimelineContent fontSize={5}><p style={{ margin: '0' }}>CSS - La guía completa </p></TimelineContent>
                 </TimelineItem>
 
 
                 <TimelineItem>
-                    <TimelineOppositeContent fontSize={18} color="text.secondary">
+                    <TimelineOppositeContent fontSize={5} color="text.secondary">
                         <p style={{ margin: '0' }}>  Alura & ORACLE - 2023</p>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot color='error' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent fontSize={18}><p style={{ margin: '0' }}>Bootcamp Front-end </p></TimelineContent>
+                    <TimelineContent fontSize={5}><p style={{ margin: '0' }}>Bootcamp Front-end </p></TimelineContent>
                 </TimelineItem>
 
                 <TimelineItem>
-                    <TimelineOppositeContent fontSize={18} color="text.secondary">
+                    <TimelineOppositeContent fontSize={5} color="text.secondary">
                         <p style={{ margin: '0' }}>  UDEMY - En curso</p>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot color='error' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent fontSize={18}><p style={{ margin: '0' }}> React, Redux, Next, MERN - Guía completa</p></TimelineContent>
+                    <TimelineContent fontSize={5}><p style={{ margin: '0' }}> React, Redux, Next, MERN - Guía completa</p></TimelineContent>
                 </TimelineItem>
 
                 <TimelineItem>
-                    <TimelineOppositeContent fontSize={18} color="text.secondary">
+                    <TimelineOppositeContent fontSize={5} color="text.secondary">
                         <p style={{ margin: '0' }}> UDEMY - En curso </p>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot color='error' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent fontSize={18}><p style={{ margin: '0' }}>Desarrollo Web Completo - Html, Css, Php, Js, MySQL </p></TimelineContent>
+                    <TimelineContent fontSize={5}><p style={{ margin: '0' }}>Desarrollo Web Completo - Html, Css, Php, Js, MySQL </p></TimelineContent>
                 </TimelineItem>
 
             </Timeline>
