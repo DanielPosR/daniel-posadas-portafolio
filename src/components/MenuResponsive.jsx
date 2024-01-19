@@ -79,8 +79,8 @@ export default function MenuResponsive() {
 
                     <li>
 
-                        <label id="theme-toggle-button">
-                            <input type="checkbox" id="toggle" onClick={() => {
+                        <label htmlFor="toggle-button" id="theme-toggle-button">
+                            <input name="toggle-button" type="checkbox" id="toggle" onClick={() => {
                                 setModoOscuro(!modoOscuro)
                                 cambiarTema();
                             }} />
