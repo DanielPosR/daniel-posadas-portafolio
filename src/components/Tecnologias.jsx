@@ -2,6 +2,7 @@ import '../../styles/tecnologias.css';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+import VisibilitySensor from 'react-visibility-sensor';
 
 //* ANIMACIONES
 import AOS from 'aos';
@@ -9,7 +10,6 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 export default function Tecnologias() {
-
 
     const tecnologias = [
         {
@@ -80,6 +80,8 @@ export default function Tecnologias() {
         },
     ]
 
+
+
     return (
 
         <section className='tecnologias' id='tecnologias'>
@@ -98,19 +100,28 @@ export default function Tecnologias() {
                             data-aos='fade-up'
                             data-aos-duration="2000"
                         >
-                            <CircularProgressbarWithChildren
-                                value={numero}
-                                styles={buildStyles({
-                                    rotation: 0.25,
-                                    pathColor: `${color}`,
-                                    trailColor: '#e1e1e1',
-                                    strokeLinecap: 'butt'
-                                })}
-                            >
-                                <img src={`/img/${img}.svg`} alt="Icono html" />
-                                <p className='texto'>{nombre}</p>
-                                <p className='porcentaje'>{numero}%</p>
-                            </CircularProgressbarWithChildren>
+                            <VisibilitySensor>
+                                {({ isVisible }) => {
+                                    const porcentaje = isVisible ? numero : 0;
+
+                                    return (
+                                        <CircularProgressbarWithChildren
+                                            value={porcentaje}
+                                            styles={buildStyles({
+                                                rotation: 0.25,
+                                                pathColor: `${color}`,
+                                                trailColor: '#e1e1e1',
+                                                strokeLinecap: 'butt'
+                                            })}
+                                        >
+                                            <img src={`/img/${img}.svg`} alt="Icono html" />
+                                            <p className='texto'>{nombre}</p>
+                                            <p className='porcentaje'>{numero}%</p>
+                                        </CircularProgressbarWithChildren>
+                                    )
+                                }}
+                            </VisibilitySensor>
+
 
                         </div>
                     )

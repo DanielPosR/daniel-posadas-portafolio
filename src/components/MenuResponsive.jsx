@@ -62,6 +62,10 @@ export default function MenuResponsive() {
             <nav className={`nav ${isActive ? `active` : ''}`}>
                 <ul>
                     <li>
+                        <a id="proyect" href="#proyectos">Proyectos</a>
+                    </li>
+                    
+                    <li>
                         <a id="tec" href="#tecnologias">Tecnologías</a>
                     </li>
 
@@ -69,9 +73,7 @@ export default function MenuResponsive() {
                         <a id="habil" href="#habilidades">Habilidades</a>
                     </li>
 
-                    <li>
-                        <a id="proyect" href="#proyectos">Proyectos</a>
-                    </li>
+
 
                     <li>
                         <a id="contact" className="contacto" href="#contacto">Contacto</a>

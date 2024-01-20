@@ -13,15 +13,13 @@ function App() {
   return (
     <>
       <Header />
-
-
       <Hero />
+
+      <Proyectos />
 
       <Tecnologias />
 
       <Habilidades />
-
-      <Proyectos />
 
       <Formacion />
 
