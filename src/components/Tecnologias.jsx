@@ -122,7 +122,6 @@ export default function Tecnologias() {
                                 }}
                             </VisibilitySensor>
 
-
                         </div>
                     )
 
