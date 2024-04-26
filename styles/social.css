@@ -71,7 +71,7 @@
 }
 
 .instagram {
-  background-color: #c13584;
+  background-color: #4fa883;
 }
 
 .instagram svg {
@@ -79,5 +79,14 @@
 }
 
 .instagram:hover svg {
-  fill: #c13584;
+  fill: #4fa883;
+}
+
+.tiktok {
+  background-color: #ff0067;
+  fill: #fff;
+}
+
+.tiktok:hover svg {
+  fill: #ff0067;
 }

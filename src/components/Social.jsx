@@ -21,6 +21,10 @@ export default function Social() {
                         <path d="m24.707 8.793-6.5-6.5c-0.188-0.188-0.442-0.293-0.707-0.293h-10.5c-1.105 0-2 0.895-2 2v22c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-16.5c0-0.265-0.105-0.519-0.293-0.707zm-6.707 12.207h-8c-0.552 0-1-0.448-1-1s0.448-1 1-1h8c0.552 0 1 0.448 1 1s-0.448 1-1 1zm2-4h-10c-0.552 0-1-0.448-1-1s0.448-1 1-1h10c0.552 0 1 0.448 1 1s-0.448 1-1 1zm-2-7c-0.552 0-1-0.448-1-1v-5.096l6.096 6.096h-5.096z" />
                     </svg>
                 </a>
+
+                <a href="https://www.tiktok.com/@danielposdev" target='_blank' rel="noreferrer" className="social-button tiktok" aria-label='Enlace a mi tiktok'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">{/*Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->*/}<path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                </a>
             </div>
         </>
     )
